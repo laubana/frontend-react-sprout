@@ -8,6 +8,7 @@ export type Option = {
 export interface DropDownProps
   extends React.SelectHTMLAttributes<HTMLSelectElement> {
   options: Option[];
+  placeholder?: string;
   value?: string | undefined;
   setValue?: Dispatch<SetStateAction<string | undefined>>;
   error?: string;
